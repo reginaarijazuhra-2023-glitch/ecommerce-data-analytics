@@ -244,7 +244,7 @@ with col_viz1:
         axes[0].set_title('Total Pendapatan Bulanan — E-Commerce Olist (Sep 2016 – Ags 2018)',
                           fontsize=13, fontweight='bold', pad=12)
         axes[0].set_xticks(range(len(monthly)))
-        axes[0].set_xticklabels(monthly['order_month'], rotation=45, ha='right', fontsize=8)
+        axes[0].set_xticklabels(monthly['order_month'].tolist(), rotation=45, ha='right', fontsize=8)
         axes[0].legend(fontsize=9)
         style_ax(axes[0])
 
@@ -255,7 +255,7 @@ with col_viz1:
         axes[1].axhline(0, color='#374151', linewidth=0.8)
         axes[1].set_ylabel('Growth (%)', fontsize=9)
         axes[1].set_xticks(range(len(monthly)))
-        axes[1].set_xticklabels(monthly['order_month'], rotation=45, ha='right', fontsize=8)
+        axes[1].set_xticklabels(monthly['order_month'].tolist(), rotation=45, ha='right', fontsize=8)
         style_ax(axes[1])
         axes[1].grid(axis='y', color='#e5e7eb', linewidth=0.7, alpha=0.7)
 
