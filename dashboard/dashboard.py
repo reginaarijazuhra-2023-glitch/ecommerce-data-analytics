@@ -112,13 +112,13 @@ def load_data():
         p2 = fname
         return p1 if os.path.exists(p1) else p2
 
-    df_orders    = pd.read_csv(path("orders_dataset.csv"))
-    df_items     = pd.read_csv(path("order_items_dataset.csv"))
-    df_payments  = pd.read_csv(path("order_payments_dataset.csv"))
-    df_reviews   = pd.read_csv(path("order_reviews_dataset.csv"))
-    df_customers = pd.read_csv(path("customers_dataset.csv"))
-    df_products  = pd.read_csv(path("products_dataset.csv"))
-    df_category  = pd.read_csv(path("product_category_name_translation.csv"))
+    df_orders    = pd.read_csv(path("../data/orders_dataset.csv"))
+    df_items     = pd.read_csv(path("../data/order_items_dataset.csv"))
+    df_payments  = pd.read_csv(path("../data/order_payments_dataset.csv"))
+    df_reviews   = pd.read_csv(path("../data/order_reviews_dataset.csv"))
+    df_customers = pd.read_csv(path("../data/customers_dataset.csv"))
+    df_products  = pd.read_csv(path("../data/products_dataset.csv"))
+    df_category  = pd.read_csv(path("../data/product_category_name_translation.csv"))
 
     for kol in ['order_purchase_timestamp', 'order_approved_at',
                 'order_delivered_carrier_date', 'order_delivered_customer_date',
